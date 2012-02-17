@@ -32,7 +32,7 @@ class FaqSetup < ActiveRecord::Migration
   
     add_index "faqs", ["project_id"], :name => "faqs_project_id"
     
-    Faq.create_versioned_table
+#    Faq.create_versioned_table
     
     create_table "faq_settings", :force => true do |t|
       t.column "project_id", :integer, :default => 0, :null => false
