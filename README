@@ -10,4 +10,14 @@ this in SQL, but it wasnt important enough for us to develop.
 
 Should be installed in ${CHILIPROJECT}/vendor/chiliproject_plugins/faq_plugin
 
+If moving from a compatible (old) version of ezFAQ to this plugin, try running something like this before migrating plugins:
+
+[mysql]
+
+update schema_migrations
+set version=replace(version, 'ezfaq', 'faq');
+
+
+Obviously back up your data - theres a million variables and no guarantees this will work..
+
 
