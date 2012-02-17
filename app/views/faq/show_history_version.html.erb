@@ -1,0 +1,15 @@
+<div class="contextual">
+</div>
+<% for journal in journals %>
+  <%= render_journal faq, journal, :edit_permission => :edit_faqs %>
+  <%= call_hook(:view_faqs_history_journal_bottom, { :journal => journal }) %>
+<% end %>
+</div>
+
+<% content_for :sidebar do %>
+    <%= render :partial => 'faq/sidebar' %>
+<% end %>
+
+<% content_for :header_tags do %>
+    <%= stylesheet_link_tag '/plugin_assets/faq_plugin/stylesheets/faq' %>
+<% end %>
