@@ -1,0 +1,13 @@
+2011-06-01
+==========
+This is a fork of ezfaq, a FAQ management plugin for Redmine by Zou Chaoqun. 
+
+
+The aim of this fork is to bodge it together for use in the chiliproject branch of redmine.
+
+NOTE: Migrations do not preserve history data from the old version of EZFaq.  I guess its possible to kludge 
+this in SQL, but it wasnt important enough for us to develop.
+
+Should be installed in ${CHILIPROJECT}/vendor/chiliproject_plugins/faq_plugin
+
+
